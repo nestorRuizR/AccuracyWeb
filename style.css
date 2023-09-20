@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none ;
+}
+.ani1{animation: blur-in-expand 1s;}
+@keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+.ani2{animation:scale-up-center 0.4s; } 
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+.blur-in{animation:blur-in 0.4s linear both} 
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.vibrate{animation:vibrate 1.5s linear both} 
+@keyframes vibrate{0%{transform:translate(0)}30%{transform:translate(-2px,2px)}70%{transform:translate(2px,2px)}100%{transform:translate(0)}}
+
+@font-face
+{
+    font-family: outfit;
+    src: url(fonts/Outfit-Light.ttf);
+}
+@font-face
+{
+    font-family: outfitNegrita;
+    src: url(fonts/Outfit-Black.ttf);
+}
+@font-face
+{
+    font-family: outfitBlack;
+    src: url(fonts/Outfit-Regular.ttf);
+}
+
+header
+{
+    width: 100%;
+    background-color:#00365f;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: fixed;
+    padding:0.8% 0.8% 0.2% 0.8%;
+    z-index: 1;
+    
+}
+.btnFlotante
+{
+    width: auto;
+    height: 50px;
+}
+.navbar
+{
+  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.logoAccuracy
+{
+  padding: 6% 0% 0% 0%;
+    width: auto;
+    height: 40px;
+    
+}
+.iconosws
+{
+  padding: 7% 0% 0% 0%;
+    width: 95px;
+    height: auto;
+    vertical-align: middle;
+}
+.iconosNavBar
+{
+  display: flex;
+  justify-content: center;
+}
+.iconosmail > a > img
+{
+display: flex;
+flex-direction: column;
+
+}
+
+
+/* PANTALLA PC */
+  @media screen and (min-width: 700px) {
+     .dropdown2 .dropbtn2 {
+      display: none;
+    }
+    .portadasMobile
+{
+ display: none;
+}
+.textoMobile
+{
+display: none;
+}
+.tituloMobile
+{
+display: none;
+}
+.SellosMobile
+{
+  display: none;
+}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    body
+{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+.fondoAlmacen
+{
+  width:100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/fondo_almacen.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100% 120%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+
+}
+.fondoAlmacen > img
+{
+    padding: 0% 30%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.cuerpo p
+{
+    font-family: outfitNegrita;
+    font-size: 45px;
+    text-align: center;
+    padding: 2.5% 8%;
+    color:#758c98;
+
+}
+.cuerpo h1
+{
+    font-family: outfit;
+    font-size: 22px;
+    text-align: center;
+    padding: 1% 8%;
+    color:#758c98;
+
+}
+.titulo
+{
+
+    margin: 0.1%;
+    background: linear-gradient(90deg,#478cc0 39%, #ffffff 96%);
+    padding: 0.5%;
+}
+.titulo a{
+    background: none;
+    font-family: outfit;
+    font-size: 27px;
+    color: white;
+}
+  
+  .dropdown {
+    text-align: center;
+    float: left ;
+  }
+  .tamañogrande
+  {
+    width: 350px;
+  }
+
+  
+  .dropdown .dropbtn {
+     font-family: outfit;
+     font-size: 21px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 2%;
+    background-color: inherit;
+    margin: 0;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 17px;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    margin: 0.1%;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    animation: blur-in-expand 0.1s;
+    background-color: #f8f8f8;
+    color: #00365f;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #a9daff;
+    color: #00365f;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    animation: blur-in-expand 0.1s;
+    display: block;
+  }
+    #CONSULTORIALOGISTICA
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1% 20%;
+
+}
+#CONSULTORIALOGISTICA > div 
+{
+    width: 50%;
+}
+
+  .consultoriaLog
+  {
+    padding: 1% 0%;
+    animation:blur-in 0.8s linear both
+
+  }
+  .consultoriaLog img
+  {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin: 1%;    
+  }
+  .consultoriaLog p
+  {
+    font-family: outfitBlack;
+    color: #3d3d3d;
+    padding: 5%;
+    font-size: 20px;
+  }
+  #SISTEMADEGESTIONDEALMACENESWMS
+  {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5% 20%;
+  }
+  #SISTEMADEGESTIONDEALMACENESWMS > div 
+  {
+      width: 90%;
+      height: auto;
+  }
+
+  .portadas
+  {
+    animation:scale-up-center 0.7s; 
+    width: 100%;
+    height: auto;
+    margin: 1%;
+  }
+  .diferenciadores
+  {
+    animation:scale-up-center 0.7s; 
+    width: 70%;
+    height: auto;
+    margin: 1% 8%;
+  }
+  .portadasWMS
+  {
+    animation:vibrate 0.1s linear both;
+    width: 100%;
+    height: auto;
+  }
+
+.iconWMS img
+{
+width: auto;
+height: 200px;
+margin: 1%;
+align-content: center;
+}
+
+.botones
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5% 0% 0% 0%;  
+}
+
+.botones > a,
+.botones > button
+{
+  padding: 1.5% 2%;
+  width:auto;
+  height: auto  ;
+  border:none;
+  font-family: outfit;
+  font-size: 16px;
+  border-radius: 15px;
+  margin: 1% -5%;
+}
+.botones > button:hover
+{
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+
+.inactive {
+  background-color: #e3edff;
+  color: #00365f; 
+}
+.textos
+{
+  margin: 1%;
+}
+.textos >h1
+{
+font-family: outfitBlack;
+color: #00365f;
+font-size: 22px;
+background-color: rgb(192, 211, 243);
+border-style:outset;
+}
+.textos >h2
+{
+font-family: outfit;
+color: #00365f;
+font-size: 20px;
+margin: 4px;
+}
+.clientes
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.clientes > img
+{
+  width: 16%;
+  height: auto;
+}
+.beneficios
+{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.beneficios > img
+{
+  width: 17%;
+  margin: 2% 3%;
+  height: auto;
+}
+}
+  
+  /* PANTALLA MOBILE */
+   @media screen and (max-width: 700px) {
+    .iconosNavBar
+    {
+padding: 3% 0 0 6%;
+    }
+
+    .iconosws
+    {
+      width: 100%;
+      height: auto;
+    }
+
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .dropdown {float: none;}
+    .navbar.responsive .dropdown-content {position: relative;}
+    .navbar.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  .cuerpo
+    {
+      padding: 40% 5% ;
+    }
+    .cuerpo >p
+    {
+      font-family: outfitNegrita;
+      font-size: 23px;
+      color: #00365f;
+      text-align: center;
+    }
+    .cuerpo > h1
+    {
+      font-family: outfit;
+      font-size: 18px;
+      color: #758c98;
+      text-align: justify;
+    }
+    .textos > h2
+    {
+      font-family: outfit;
+      font-size: 16px;
+      color: #758c98;
+    }
+#SISTEMADEGESTIONDEALMACENESWMS
+{
+  padding: 40% 5% ;
+}
+.titulo
+{
+  font-family: outfitNegrita;
+  font-size: 25px;
+  color: #00365f;
+  text-align: center;
+}
+.textos > h1
+{
+  font-family: outfit;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #758c98;
+  padding: 2%;
+  margin: -2%;
+}
+
+ 
+.organigrama
+{
+  width: 100%;
+  height: auto;
+}
+#CONSULTORIALOGISTICA > div 
+{
+    width: 90%;
+}
+
+  .consultoriaLog
+  {
+    animation:blur-in 0.8s linear both;
+
+  }
+  .consultoriaLog img
+  {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin: 0 1%;
+    padding: 0 5%;  
+  }
+  .consultoriaLog p
+  {
+    font-family: outfitBlack;
+    color: #3d3d3d;
+    font-size: 18px;
+    padding: 5%;
+  }
+  .consultoriaLog a
+  {
+    width: 100%;
+  }
+
+#CONSULTORIALOGISTICA .titulo
+{
+padding: 40% 5% 10% 0;
+text-align: center;
+}
+#CONSULTORIALOGISTICA > .consultoriaLog
+{
+  margin: 5%;
+  display: flex;
+}
+#CONSULTORIALOGISTICA > .consultoriaLog > img
+{
+  width: 20%;
+  height: auto;
+}
+#CONSULTORIALOGISTICA > .consultoriaLog > p
+{
+  padding: 6% 0 0 0;
+  width: 80%;
+  font-family: outfit;
+  font-size: 14px;
+  color: #00365f;
+  text-align: center;
+}
+.portadas
+{
+  display: none;
+}
+.diferenciadores
+{
+  display: none;
+}
+.portadasMobile
+{
+  width: 100%;
+  height: auto;
+}
+.textoMobile
+{
+  font-family: outfit;
+  font-size: 14px;
+  color: #00365f;
+  text-align: justify;
+}
+.tituloMobile
+{
+  font-family: outfitNegrita;
+  font-size: 16px;
+  color: #00365f;
+  text-align: justify;
+}
+.SellosMobile
+{
+  margin: 1.5%;
+  width: 45%;
+  height: auto;
+}
+.clientes
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clientes > img
+{
+  padding: 1% 5%;
+  width: 40%;
+  height: auto;
+}
+    .btnFlotante
+    {
+      width: 35%;
+      height: auto;
+    }
+    .dropdown-content > a
+    {
+      display:  none;
+    }
+    .fondoAlmacen
+    {
+      display: none;
+    }
+    .beneficios
+{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.beneficios > img
+{
+  width: 28%;
+  margin: 2% 1.5%;
+  height: auto;
+}
+  }
+  /*FIN MOBILE*/
+.dropbtn2 {
+  background-color: #2980B9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #2980B9;
+}
+
+.dropdown2 {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #00365f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #2980B9;}
+
+.show {display:block;}

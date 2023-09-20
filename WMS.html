@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy SCS</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+    
+<header>
+  <div class="navbar">
+    <div><a href="QuienesSomos.html"><img class="logoAccuracy" src="imagenes/accuracy logo.png" alt="logo" ></a></div>
+  
+    <div class="dropdown tamañogrande">
+        <button class="dropbtn">Consultoría
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="ConsultoriaLogisitca.html">Consultoría en logística</a>
+          <a href="ConsultoriaIT.html">Consultoría en IT</a>
+        </div>
+      </div>
+  
+    <div class="dropdown tamañogrande">
+        <button class="dropbtn">Soluciones Tecnológicas
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="WMS.html">Sistema de Gestión de Almacenes (WMS)</a>
+          <a href="TMS.html">Sistema de Gestión de Transporte (TMS)</a>
+          <a href="SCP.html">Sistema de Planeación de la cadena de suministro (SCP)</a>
+          <a href="voicePicking.html">Voice Picking</a>
+        </div>
+      </div>
+  
+      <!-- <div class="dropdown tamañogrande">
+        <button class="dropbtn">Equipamiento logístico
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">HandHeld's</a>
+          <a href="#">Lector de código de barras</a>
+          <a href="#">Equipos RFID</a>
+          <a href="#">Impresoras y suministros</a>
+        </div>
+      </div> -->
+  
+      <div class="dropdown tamañogrande">
+        <button class="dropbtn">Acerca de nostros
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="QuienesSomos.html">Quienes somos</a>
+          <a href="casosDeExito.html">Casos de éxito</a>
+        </div>
+      </div>
+  
+      <div class="iconosNavBar">
+    <a href="mailto:epariona@accuracycsc.com"><img class="iconosws" src="imagenes/icon_mail.png" alt="iconosmail"></a>
+  </div>
+  
+  <div class="iconosNavBar">
+    <a href="https://api.whatsapp.com/send?phone=51989123800&text=Hola,%20vi%20tu%20pagina%20web%20y%20quisiera%20concretar%20una%20reunion%20contigo"><img class="iconosws" src="imagenes/icon_ws.png" alt="iconosws"> </a>
+  </div>
+  
+  </div>
+  <div class="dropdown2">
+    <button onclick="abrirMenu()" class="dropbtn2">Menu</button>
+    <div id="mdd" class="dropdown-content2">
+      <a href="ConsultoriaLogisitca.html">Consultoría en logística</a>
+          <a href="ConsultoriaIT.html">Consultoría en IT</a>
+          <a href="WMS.html">Sistema de Gestión de Almacenes (WMS)</a>
+          <a href="TMS.html">Sistema de Gestión de Transporte (TMS)</a>
+          <a href="SCP.html">Sistema de Planeación de la cadena de suministro (SCP)</a>
+          <a href="voicePicking.html">Voice Picking</a>
+          <a href="QuienesSomos.html">Quienes Somos</a>
+          <a href="casosDeExito.html">Casos de Éxito</a>
+    </div>
+  </div>
+  
+  <a title="agendaunacita" href="mailto:epariona@accuracycsc.com"><img class="btnFlotante ani1" src="imagenes/btn_agendaunacita.png" style="position: fixed; top: 90%; right: 50px;" alt="" /></a>
+  
+  </header>
+
+    <body>
+<div class="fondoAlmacen">
+<img src="imagenes/accuracy logo.png" alt="iconoAccuracy">
+</div>
+
+<a name="WMS"></a>
+<nav id="SISTEMADEGESTIONDEALMACENESWMS" >
+<div class="titulo">
+    <a class="titulo">Sistema de Gestión de Almacenes (WMS)</a>
+</div>
+
+<div>
+<br />
+<br />
+  <img class="portadas" src="imagenes/WMS2.png" alt="">
+
+</div>
+<div class="titulo">
+  <a class="portadas">¿Qué nos diferencia de la competencia?</a>
+</div>
+  <img class="diferenciadores" src="imagenes/EXPERIENCIA INIGUALABLE.png" alt="">
+  <img class="diferenciadores" src="imagenes/FLEXIBILIDAD Y ADAPTABILIDAD.png" alt="">
+  <img class="diferenciadores" src="imagenes/FORMACION SOPORTE CONTINUO.png" alt="">
+  <img class="diferenciadores" src="imagenes/SOLUCION INTEGRAL.png" alt="">
+
+<div>
+  <img class="portadas" src="imagenes/WMS1.png" alt="">
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+<div class="titulo">
+  <a class="titulo">Nuestro Módulos</a>
+</div>
+
+<div class="botones portadas">
+  <button id="btn-port-recibo" class="active">
+    <div class="btn">Recibo</div>
+  </button>
+  <button id="btn-port-put-away" class="inactive">
+    <div class="btn">Put-Away</div>
+  </button>
+  <button id="btn-port-picking" class="inactive">
+    <div class="btn">Picking</div>
+  </button>
+  <button id="btn-port-chequeo-y-embalaje" class="inactive">
+    <div class="btn">Chequeo y embalaje</div>
+  </button>
+  <button id="btn-port-shipping" class="inactive">
+    <div class="btn">Shipping</div>
+  </button>
+  <button id="btn-port-inventarios" class="inactive">
+    <div class="btn">Inventarios</div>
+  </button>
+  <button id="btn-port-otros" class="inactive">
+    <div class="btn">Otros</div>
+  </button>
+  <div id="img-port-recibo" class="show">
+    <img class="portadasWMS" src="imagenes/wmsRecepcion.png" alt="">
+  </div>
+  <div id="img-port-put-away" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsPutaway.png" alt="">
+  </div>
+  <div id="img-port-picking" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsPicking.png" alt="">
+  </div>
+  <div id="img-port-chequeo-y-embalaje" class="hide">
+    <img class="portadasWMS" src="imagenes/WMSCchequeo.png" alt="">
+  </div>
+  <div id="img-port-shipping" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsShipping.png" alt="">
+  </div>
+  <div id="img-port-inventarios" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsInventarios.png" alt="">
+  </div>
+  <div id="img-port-otros" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsOtros.png" alt="">
+  </div>
+
+</div>
+
+
+<img class="portadasMobile" src="imagenes/WMSMobile.png" alt="">
+<br />
+<h1 class="textoMobile">Desarrollado por consultores logísticos con más de 20 años de experiencia, nuestro 
+  software WMS no es solo un producto tecnológico, sino el resultado de décadas de 
+  comprensión profunda de las necesidades logísticas modernas. Entendemos los retos, 
+  y hemos creado una herramienta para superarlos.</h1>
+  <br />
+  <h2 class="tituloMobile">
+    Diferenciadores clave:
+  </h2>
+  <br />
+  <h1 class="textoMobile">Experiencia Inigualable: Avalados por dos décadas de consultoría e implementación de sistemas WMS 
+    líderes en el mercado global. Sabemos lo que funciona y lo que no, y hemos plasmado ese 
+    conocimiento en cada línea de código.
+    Solución Integral: Más que un simple sistema de gestión de almacenes, ofrecemos una solución holística 
+    que integra todos los aspectos de la cadena de suministro, optimizando operaciones y maximizando eficiencias.
+    Flexibilidad y Adaptabilidad: Reconocemos que cada negocio es único. Nuestro software WMS se adapta a
+     diferentes sectores y tamaños de empresas, garantizando escalabilidad y adaptabilidad según las necesidades 
+    cambiantes de su negocio.
+    Formación y Soporte Continuo: Nuestro compromiso no termina con la implementación. Proporcionamos 
+    formación continua y soporte post-venta para asegurar que su equipo extraiga el máximo valor de la herramienta.</h1>
+    <br />
+    <h2 class="tituloMobile">
+      Ofrecemos:
+    </h2>
+    <br />
+    <img class="SellosMobile" src="imagenes/EXPERIENCIA INIGUALABLE MOBILE.png" alt="">
+  <img class="SellosMobile" src="imagenes/FLEXIBILIDAD Y ADAPTABILIDAD MOBILE.png" alt="">
+  <img class="SellosMobile" src="imagenes/FORMACION SOPORTE CONTINUO MOBILE.png" alt="">
+  <img class="SellosMobile" src="imagenes/SOLUCION INTEGRAL MOBILE.png" alt="">
+  <br />
+  <br />
+  <img class="portadasMobile" src="imagenes/sistemaGarantizaTrazabilidad.png" alt="">
+  <br />
+  <h1 class="textoMobile">La trazabilidad, exactitud y visibilidad del inventario son procesos de vital 
+    importancia dentro de un almacén, los cuales no son sencillos de mantener y 
+    mejorar; por tanto requieren de gran esfuerzo y disciplina para el control de las 
+    existencias durante el ingreso, el almacenamiento y la salida de los materiales. 
+    El WMS Accuracy es una herramienta intuitiva y amigable que permite controlar 
+    y simplificar tus procesos, desde la recepción hasta el despacho, asegurando 
+    la exactitud, visibilidad y trazabilidad, pero además maximizando la productividad.</h1>
+    <br />
+    <br />
+    <div class="beneficios">
+      <img src="imagenes/reducciondecostesdecumplimiento.png" alt="">
+      <img src="imagenes/aumentodeproductividadlaboral.png" alt="">
+      <img src="imagenes/mejoraenelrendimientodelinventario.png" alt="">
+      <img src="imagenes/disminuciondeespaciorequerido.png" alt="">
+      <img src="imagenes/precisiondeinventariodecontenedoressuperioral99.png" alt="">
+      <img src="imagenes/sinlicenciasporusuarios.png" alt="">
+      <img src="imagenes/bajocostodesostenibilidadalargoplazo.png" alt="">
+    </div>
+</nav>
+
+</body>
+
+
+  
+<script src="script.js"></script>
+<script src="script mobile.js"></script>
+</html>
